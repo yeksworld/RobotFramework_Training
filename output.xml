@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.7.0 on win32)" generated="20211125 12:16:36.634" rpa="false" schemaversion="2">
-<suite id="s1" name="Title" source="C:\Users\yunus\PycharmProjects\RobotFramework_Paul\Open_Browser\Title.robot">
-<test id="s1-t1" name="Open Login Page">
+<robot generator="Robot 4.1.2 (Python 3.7.0 on win32)" generated="20211125 12:30:27.081" rpa="false" schemaversion="2">
+<suite id="s1" name="WithVariable" source="C:\Users\yunus\PycharmProjects\RobotFramework_Paul\Open_Browser\WithVariable.robot">
+<test id="s1-t1" name="Open Page with Variables">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.cheapoair.com/flights/book-now-pay-later-flights</arg>
-<arg>chrome</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211125 12:16:36.981" level="INFO">Opening browser 'chrome' to base url 'https://www.cheapoair.com/flights/book-now-pay-later-flights'.</msg>
-<status status="PASS" starttime="20211125 12:16:36.981" endtime="20211125 12:16:45.311"/>
+<msg timestamp="20211125 12:30:27.379" level="INFO">Opening browser 'chrome' to base url 'https://www.cheapoair.com/flights/book-now-pay-later-flights'.</msg>
+<status status="PASS" starttime="20211125 12:30:27.378" endtime="20211125 12:30:31.996"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211125 12:16:45.311" endtime="20211125 12:16:45.624"/>
+<status status="PASS" starttime="20211125 12:30:31.996" endtime="20211125 12:30:32.188"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Book Now Pay Later Flights with Cheapoair</arg>
+<arg>${title}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211125 12:16:45.743" level="INFO">Page title is 'Book Now Pay Later Flights with Cheapoair'.</msg>
-<status status="PASS" starttime="20211125 12:16:45.624" endtime="20211125 12:16:45.743"/>
+<msg timestamp="20211125 12:30:32.340" level="INFO">Page title is 'Book Now Pay Later Flights with Cheapoair'.</msg>
+<status status="PASS" starttime="20211125 12:30:32.188" endtime="20211125 12:30:32.340"/>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20211125 12:16:45.743" endtime="20211125 12:16:45.967"/>
+<status status="PASS" starttime="20211125 12:30:32.341" endtime="20211125 12:30:32.592"/>
 </kw>
-<status status="PASS" starttime="20211125 12:16:36.980" endtime="20211125 12:16:45.967"/>
+<status status="PASS" starttime="20211125 12:30:27.378" endtime="20211125 12:30:32.597"/>
 </test>
-<status status="PASS" starttime="20211125 12:16:36.636" endtime="20211125 12:16:45.967"/>
+<status status="PASS" starttime="20211125 12:30:27.085" endtime="20211125 12:30:32.601"/>
 </suite>
 <statistics>
 <total>
@@ -34,7 +34,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Title">Title</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="WithVariable">WithVariable</stat>
 </suite>
 </statistics>
 <errors>
